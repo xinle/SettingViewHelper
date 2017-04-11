@@ -1,1 +1,1 @@
-include ':app', ':settingviewhelper'
+include ':SettingViewHelperLibrary', ':SettingViewHelperApp'

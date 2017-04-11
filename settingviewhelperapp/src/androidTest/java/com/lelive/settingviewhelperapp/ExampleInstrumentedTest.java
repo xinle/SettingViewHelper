@@ -1,4 +1,4 @@
-package com.lelive.settingviewhelper;
+package com.lelive.settingviewhelperapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.lelive.settingviewhelper", appContext.getPackageName());
+        assertEquals("com.lelive.settingviewhelperapp", appContext.getPackageName());
     }
 }

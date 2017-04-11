@@ -1,4 +1,4 @@
-package com.lelive.settingviewhelper;
+package com.lelive.settingviewhelperapp;
 
 import org.junit.Test;
 
