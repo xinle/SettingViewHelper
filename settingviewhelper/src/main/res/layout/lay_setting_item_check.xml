@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+                android:minHeight="@dimen/common_setting_item_height"
+    android:background="@drawable/bg_layout_selector" >
+
+    <ImageView
+        android:id="@+id/setting_item_icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/setting_item_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/setting_item_icon"
+        android:ellipsize="middle"
+        android:gravity="left"
+        android:layout_toLeftOf="@+id/switch_btn"
+        android:layout_centerVertical="true"
+        android:textColor="@color/common_title_color"
+        android:maxEms="8"
+        android:paddingLeft="12dp"
+        android:singleLine="true"
+        android:textSize="16sp" />
+
+    <com.kyleduo.switchbutton.SwitchButton
+        android:id="@+id/switch_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:paddingLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp"
+        app:kswAnimationDuration="300"
+        app:kswBackDrawable="@drawable/icon_ios_check_back"
+        app:kswBackMeasureRatio="1.4"
+        app:kswThumbDrawable="@drawable/icon_ios_thumb"
+        app:kswThumbMarginBottom="-8dp"
+        app:kswThumbMarginLeft="-5dp"
+        app:kswThumbMarginRight="-5dp"
+        app:kswThumbMarginTop="-2.5dp" />
+
+</RelativeLayout>

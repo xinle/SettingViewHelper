@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="setting_item_click_bgk">#f7f7f7</color>
+    <color name="common_text_color">#333333</color>
+
+    <color name="common_title_color">#ff333333</color>	<!-- 一级标题 -->
+    <color name="common_subtitle_color">#ff999999</color><!-- 二级标题 -->
+    <color name="common_threetitle_color">#cccccc</color><!-- 三级标题 -->
+
+    <color name="common_split_color">#e0e0e0</color> <!-- 分割线 -->
+</resources>
