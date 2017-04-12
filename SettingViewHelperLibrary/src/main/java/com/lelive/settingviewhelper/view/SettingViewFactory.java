@@ -1,16 +1,11 @@
-package com.lelive.settingviewhelper;
+package com.lelive.settingviewhelper.view;
 
+import com.lelive.settingviewhelper.model.BaseSettingModel;
 import com.lelive.settingviewhelper.model.SettingCheckModel;
 import com.lelive.settingviewhelper.model.SettingCustomViewModel;
 import com.lelive.settingviewhelper.model.SettingNormalModel;
 import com.lelive.settingviewhelper.model.SettingRadioModel;
 import com.lelive.settingviewhelper.model.SettingTextInputModel;
-import com.lelive.settingviewhelper.view.BaseSettingView;
-import com.lelive.settingviewhelper.view.SettingCheckView;
-import com.lelive.settingviewhelper.view.SettingCustomView;
-import com.lelive.settingviewhelper.view.SettingNormalView;
-import com.lelive.settingviewhelper.view.SettingRadioView;
-import com.lelive.settingviewhelper.view.SettingTextInputView;
 
 /**
  * Created by xinle on 16/12/18.

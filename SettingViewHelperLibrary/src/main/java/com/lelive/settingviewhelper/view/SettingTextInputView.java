@@ -13,7 +13,7 @@ import com.lelive.settingviewhelper.model.SettingTextInputModel;
  * Created by xinle on 16/12/18.
  */
 
-public class SettingTextInputView extends BaseSettingView<SettingTextInputModel> {
+class SettingTextInputView extends BaseSettingView<SettingTextInputModel> {
     public SettingTextInputView(SettingTextInputModel mBaseSettingModel) {
         super(mBaseSettingModel);
     }

@@ -6,8 +6,10 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.lelive.settingviewhelper.model.BaseSettingModel;
 import com.lelive.settingviewhelper.model.SettingRadioModel;
 import com.lelive.settingviewhelper.view.BaseSettingView;
+import com.lelive.settingviewhelper.view.SettingViewFactory;
 
 import java.util.List;
 

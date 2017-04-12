@@ -12,7 +12,7 @@ import com.lelive.settingviewhelper.model.SettingNormalModel;
  * Created by xinle on 16/12/18.
  */
 
-public class SettingNormalView extends BaseSettingView<SettingNormalModel> {
+class SettingNormalView extends BaseSettingView<SettingNormalModel> {
 
     public SettingNormalView(SettingNormalModel mBaseSettingModel) {
         super(mBaseSettingModel);

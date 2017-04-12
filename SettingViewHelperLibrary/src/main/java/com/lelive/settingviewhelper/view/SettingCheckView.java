@@ -10,7 +10,7 @@ import com.lelive.settingviewhelper.model.SettingCheckModel;
  * Created by xinle on 16/12/18.
  */
 
-public class SettingCheckView extends BaseSettingView<SettingCheckModel> {
+class SettingCheckView extends BaseSettingView<SettingCheckModel> {
     public SettingCheckView(SettingCheckModel mBaseSettingModel) {
         super(mBaseSettingModel);
     }

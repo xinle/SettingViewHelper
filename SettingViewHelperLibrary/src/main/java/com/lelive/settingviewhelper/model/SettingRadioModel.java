@@ -1,8 +1,5 @@
 package com.lelive.settingviewhelper.model;
 
-
-import com.lelive.settingviewhelper.BaseSettingModel;
-
 public class SettingRadioModel extends BaseSettingModel {
 	private int groupId;
 	private int index;

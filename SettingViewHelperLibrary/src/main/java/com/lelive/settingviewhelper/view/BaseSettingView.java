@@ -9,8 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.lelive.settingviewhelper.BaseSettingModel;
 import com.lelive.settingviewhelper.R;
+import com.lelive.settingviewhelper.model.BaseSettingModel;
 
 /**
  * Created by xinle on 16/12/18.
@@ -25,7 +25,7 @@ public abstract class BaseSettingView<T extends BaseSettingModel> implements ISe
 
     }
 
-    public BaseSettingView(T mBaseSettingModel) {
+    BaseSettingView(T mBaseSettingModel) {
         this.mBaseSettingModel = mBaseSettingModel;
     }
 

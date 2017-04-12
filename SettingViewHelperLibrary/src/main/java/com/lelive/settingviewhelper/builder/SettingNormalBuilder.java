@@ -1,7 +1,6 @@
 package com.lelive.settingviewhelper.builder;
 
 import com.lelive.settingviewhelper.ISettingItemClickListener;
-import com.lelive.settingviewhelper.SettingViewBuilder;
 import com.lelive.settingviewhelper.model.SettingNormalModel;
 
 public class SettingNormalBuilder extends SettingViewBuilder<SettingNormalModel> {

@@ -1,7 +1,5 @@
 package com.lelive.settingviewhelper.model;
 
-import com.lelive.settingviewhelper.BaseSettingModel;
-
 public class SettingNormalModel extends BaseSettingModel {
 	private boolean haveArrows = true;
 	private CharSequence rightContent;

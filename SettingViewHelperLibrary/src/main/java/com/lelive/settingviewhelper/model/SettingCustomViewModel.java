@@ -1,9 +1,6 @@
 package com.lelive.settingviewhelper.model;
 
-
 import android.view.View;
-
-import com.lelive.settingviewhelper.BaseSettingModel;
 
 public class SettingCustomViewModel extends BaseSettingModel {
 	private View customView;

@@ -1,9 +1,12 @@
-package com.lelive.settingviewhelper;
+package com.lelive.settingviewhelper.builder;
 
-public abstract class SettingViewBuilder<T extends BaseSettingModel> {
+import com.lelive.settingviewhelper.model.BaseSettingModel;
+import com.lelive.settingviewhelper.ISettingItemClickListener;
+
+abstract class SettingViewBuilder<T extends BaseSettingModel> {
 	protected T t;
 
-	public SettingViewBuilder(Class<T> classType, CharSequence title, ISettingItemClickListener<T> settingItemClickListener) {
+	SettingViewBuilder(Class<T> classType, CharSequence title, ISettingItemClickListener<T> settingItemClickListener) {
 
 		T t = null;
 		try {

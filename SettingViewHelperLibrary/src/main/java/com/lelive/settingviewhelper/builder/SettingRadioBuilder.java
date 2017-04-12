@@ -1,7 +1,6 @@
 package com.lelive.settingviewhelper.builder;
 
 
-import com.lelive.settingviewhelper.SettingViewBuilder;
 import com.lelive.settingviewhelper.model.SettingRadioModel;
 
 public class SettingRadioBuilder extends SettingViewBuilder<SettingRadioModel> {

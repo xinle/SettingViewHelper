@@ -9,7 +9,7 @@ import com.lelive.settingviewhelper.model.SettingRadioModel;
  * Created by xinle on 16/12/18.
  */
 
-public class SettingRadioView extends BaseSettingView<SettingRadioModel> {
+class SettingRadioView extends BaseSettingView<SettingRadioModel> {
 
     public SettingRadioView(SettingRadioModel mBaseSettingModel) {
         super(mBaseSettingModel);

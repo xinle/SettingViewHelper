@@ -1,5 +1,6 @@
-package com.lelive.settingviewhelper;
+package com.lelive.settingviewhelper.model;
 
+import com.lelive.settingviewhelper.ISettingItemClickListener;
 import com.lelive.settingviewhelper.view.BaseSettingView;
 
 public abstract class BaseSettingModel {

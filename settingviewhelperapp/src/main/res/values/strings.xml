@@ -2,14 +2,8 @@
     <string name="app_name">SettingViewHelperApp</string>
 
     <string-array name="vehicle">
-        <item>不限</item>
         <item>自驾</item>
         <item>飞机</item>
         <item>高铁</item>
-        <item>火车</item>
-        <item>汽车</item>
-        <item>船</item>
-        <item>骑行</item>
-        <item>其他</item>
     </string-array>
 </resources>

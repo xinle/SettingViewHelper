@@ -1,8 +1,5 @@
 package com.lelive.settingviewhelper.model;
 
-
-import com.lelive.settingviewhelper.BaseSettingModel;
-
 public class SettingTextInputModel extends BaseSettingModel {
 	private CharSequence inputHint;
 	private CharSequence content;

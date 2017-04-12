@@ -3,12 +3,18 @@ package com.lelive.settingviewhelperapp;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ScrollView;
+import android.widget.Toast;
 
-import com.lelive.settingviewhelper.BaseSettingModel;
+import com.lelive.settingviewhelper.model.BaseSettingModel;
+import com.lelive.settingviewhelper.ISettingItemClickListener;
 import com.lelive.settingviewhelper.SettingCreateViewUtil;
 import com.lelive.settingviewhelper.SettingGroup;
+import com.lelive.settingviewhelper.builder.SettingCheckBuilder;
+import com.lelive.settingviewhelper.builder.SettingNormalBuilder;
 import com.lelive.settingviewhelper.builder.SettingRadioBuilder;
 import com.lelive.settingviewhelper.builder.SettingTextInputBuilder;
+import com.lelive.settingviewhelper.model.SettingCheckModel;
+import com.lelive.settingviewhelper.model.SettingNormalModel;
 import com.lelive.settingviewhelper.model.SettingTextInputModel;
 
 import java.util.ArrayList;
@@ -50,9 +56,19 @@ public class MainActivity extends Activity {
             }
         }
         SettingGroup settingGroup = new SettingGroup(settingModels);
+        settingGroup.setCheckOne(true);
+
+        BaseSettingModel timeModel = new SettingNormalBuilder("出发时间", new ISettingItemClickListener<SettingNormalModel>() {
+            @Override
+            public void onClick(final SettingNormalModel settingModel) {
+                Toast.makeText(MainActivity.this, settingModel.getTitle(), Toast.LENGTH_SHORT).show();
+            }
+        }).rightContent("2017-04-12").create();
+        SettingGroup settingGroup1 = new SettingGroup(timeModel);
+
 
         List<BaseSettingModel> settingModels2 = new ArrayList<BaseSettingModel>();
-        SettingTextInputModel inputModel = new SettingTextInputBuilder("编辑说明", "请输入约会简要说明").create();
+        SettingTextInputModel inputModel = new SettingTextInputBuilder("编辑说明", "请输入简要说明").create();
 
         if (!isSelected) {
             inputModel.setContent(mContent);
@@ -61,10 +77,21 @@ public class MainActivity extends Activity {
         settingModels2.add(inputModel);
         SettingGroup settingGroup2 = new SettingGroup(settingModels2);
 
+        SettingCheckModel checkModel = new SettingCheckBuilder("是否联网", new ISettingItemClickListener<SettingCheckModel>() {
+            @Override
+            public void onClick(SettingCheckModel settingModel) {
+                Toast.makeText(MainActivity.this, "切换了", Toast.LENGTH_SHORT).show();
+            }
+        }).create();
+
+        SettingGroup settingGroup3 = new SettingGroup(checkModel);
+
         List<SettingGroup> settingGroups = new ArrayList<SettingGroup>();
-        settingGroup.setCheckOne(true);
+
         settingGroups.add(settingGroup);
+        settingGroups.add(settingGroup1);
         settingGroups.add(settingGroup2);
+        settingGroups.add(settingGroup3);
 
         mScrollView.addView(SettingCreateViewUtil.createSettingViewByGroup(this, settingGroups));
     }

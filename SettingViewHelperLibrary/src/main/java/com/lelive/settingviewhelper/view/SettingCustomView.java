@@ -1,13 +1,13 @@
 package com.lelive.settingviewhelper.view;
 
 
-import com.lelive.settingviewhelper.BaseSettingModel;
+import com.lelive.settingviewhelper.model.BaseSettingModel;
 
 /**
  * Created by xinle on 16/12/18.
  */
 
-public class SettingCustomView extends BaseSettingView {
+class SettingCustomView extends BaseSettingView {
     public SettingCustomView(BaseSettingModel mBaseSettingModel) {
         super(mBaseSettingModel);
     }
